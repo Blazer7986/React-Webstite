@@ -4,24 +4,11 @@ import React, { useState } from "react";
 //            <textarea>, <select>, <radio>
 //            Tiggers a function every time the value of the input changes.
 
-// update function = A function passed as an argument to setState() usually
-//                   ex. setYear(arrow function)
-//                   Allow for safe updates based on pervious state. Used
-//                   with multiple state updates and asynchronous functions.
-//                   Good practice to use update functions.
-
 function myComponent() {
   // useState only
   const [name, setName] = useState("Guest");
   const [age, setAge] = useState(0);
   const [isEmploy, setIsEmpoly] = useState(false);
-
-  // With onChange
-  const [name2, setName2] = useState("Guest");
-  const [quantity, setQuantity] = useState(1);
-  const [comment, setComment] = useState("");
-  const [payment, setPayment] = useState("");
-  const [shipping, setShipping] = useState("Delivery");
 
   const updateName = () => {
     setName("Rosa");
@@ -32,6 +19,13 @@ function myComponent() {
   const toggleEmployStatus = () => {
     setIsEmpoly(!isEmploy);
   };
+
+  // With onChange
+  const [name2, setName2] = useState("Guest");
+  const [quantity, setQuantity] = useState(1);
+  const [comment, setComment] = useState("");
+  const [payment, setPayment] = useState("");
+  const [shipping, setShipping] = useState("Delivery");
 
   function handleNameChange(event) {
     setName2(event.target.value);
@@ -65,7 +59,6 @@ function myComponent() {
       <p>IsEmployed: {isEmploy ? "Yes" : "No"}</p>
       <button onClick={toggleEmployStatus}>Set Age</button>
       <p>---------------------------------------------</p>
-
       <p>
         <b>*Shipping Info*</b>
       </p>

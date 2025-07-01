@@ -13,6 +13,7 @@ function List(props) {
       {item.name} : &nbsp; <b>{item.calories} </b>
     </li>
   ));
+
   return (
     <div className="list">
       <h3 className="list-category">{category}</h3>

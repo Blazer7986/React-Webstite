@@ -15,6 +15,7 @@ label {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 input[type='color'] {
   width: 75px;
   height: 50px;
@@ -115,6 +116,15 @@ input[type='color'] {
   text-align: center;
   margin: 0;
 }
+ .create-food-list ul{
+  margin: 0;
+ }
+ .create-food-list li {
+  font-size: 22px;
+  color: rgb(147, 93, 198);
+  margin: 0;
+ }
+
 .list-items li:hover {
   color: rgb(85, 31, 118);
   cursor: pointer;
@@ -127,7 +137,7 @@ input[type='color'] {
   vertical-align: top;
 }
 
-.create-person {
+.create-person, .create-food-list, .create-car-list{
   font-family: 'Courier New', Courier, monospace;
   font-size: 2em;
   border: 1px solid rgb(85, 31, 118);
@@ -136,11 +146,17 @@ input[type='color'] {
   padding: 10px;
   margin: 10px 0px;
 }
-.create-person p {
+.create-person p, .create-food-list p, .create-car-list p {
   margin: 0;
   color: rgb(212, 167, 255); 
 }
-.create-person button {
+
+.create-food-list h3, .create-car-list h3 {
+  margin: 0;
+  color: rgb(212, 167, 255);
+}
+
+.create-person button, .create-food-list button, .create-car-list button {
   background-color: rgb(212, 167, 255);
   color: white;
   font-size: 15px;
@@ -152,7 +168,9 @@ input[type='color'] {
   margin-bottom: 5px;
   cursor: pointer;
 }
-.create-person button:hover {
+.create-person button:hover,  
+.create-food-list button:hover, 
+.create-car-list button:hover  {
   color: rgb(85, 31, 118);
 }
 

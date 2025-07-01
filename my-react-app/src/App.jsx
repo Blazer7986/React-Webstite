@@ -1,5 +1,7 @@
 import Card from "./Card.jsx";
 import Button from "./Button.jsx";
+import Student from "./Student.jsx";
+import UserGreeting from "./UserGreeting.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -20,9 +22,15 @@ function App() {
 
   return (
     <>
+      <UserGreeting/>
       <Card/>
       <Card/>
       <Button/>
+      <Student name = "Patrick" age={30} isStudent={false}/>
+      <Student name = "Bob" age={28} isStudent={true}/>
+      <Student name = "Squidward" age={50} isStudent={false}/>
+      <Student name = "Sandy" age={28} isStudent={false}/>
+      <Student/>
     </>
   );
 }

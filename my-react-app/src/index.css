@@ -32,3 +32,14 @@
   border: none;
   cursor: pointer;
 } */
+
+.student {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid rgb(89, 89, 89);
+
+}
+.student p {
+  margin: 0;
+}

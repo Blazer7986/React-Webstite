@@ -1,4 +1,4 @@
-import profilePic from "./assets/whiteRose.jpg";
+import profilePic from "../assets/whiteRose.jpg";
 import Button from "./Button";
 
 function Card() {

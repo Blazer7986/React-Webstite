@@ -1,8 +1,12 @@
-import Card from "./Card.jsx";
-import Button from "./Button.jsx";
-import Student from "./Student.jsx";
-import UserGreeting from "./UserGreeting.jsx";
-import List from "./List.jsx";
+import Card from "./components/Card.jsx";
+import Student from "./components/Student.jsx";
+import UserGreeting from "./components/UserGreeting.jsx";
+import List from "./components/List.jsx";
+import ProfilePicture from "./components/ProfilePicture.jsx";
+import Footer from "./components/Footer.jsx";
+import MyComponent from "./components/myComponent.jsx";
+import Counter from "./components/Counter.jsx";
+import ColorPicker from "./components/ColorPicker.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -17,6 +21,14 @@ import List from "./List.jsx";
 // props = read-only properties that are shared between components.
 //         A parent component can send data to a child component.
 //         <Component key=value />
+
+// React hook = Special feature that allows functional components to use
+//              React features without writing class components (useState,
+//              useEffect, useContext, useReducer, useCallback, and more.
+
+// useState() = React hook that allows the creation of a stateful variable
+//              AND a setter function to update its value in the Viritual
+//              DOM.        EX) [name, setName]
 
 function App() {
   const fruits = [
@@ -40,10 +52,15 @@ function App() {
       <Card />
       {fruits.length > 0 && <List list={fruits} category="Fruits" />}
       {vegs.length > 0 && <List list={vegs} category="Vegetables" />}
+      <ProfilePicture />
       <Student name="Patrick" age={30} isStudent={false} />
       <Student name="Bob" age={28} isStudent={true} />
       <Student name="Squidward" age={50} isStudent={false} />
       <Student name="Sandy" age={28} isStudent={false} />
+      <MyComponent />
+      <Counter />
+      <ColorPicker />
+      <Footer />
     </>
   );
 }

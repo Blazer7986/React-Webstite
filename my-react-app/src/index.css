@@ -1,6 +1,6 @@
 .card {
   max-width: 250px;
-  border: 1px solid rgb(74, 74, 74);
+  border: 1px solid palevioletred;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(135, 135, 135, 0.1);
   padding: 20px;
@@ -37,9 +37,60 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 2em;
   padding: 10px;
-  border: 1px solid rgb(89, 89, 89);
+  border: 1px solid rgb(85, 31, 118);
 
 }
 .student p {
   margin: 0;
+  color: rgb(147, 93, 198);
+}
+
+.welcome-message {
+  font-size: 2em;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.login-prompt {
+  font-size: 2em;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 10px;
+  padding: 10px;
+}
+.list-category {
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(102, 102, 211);
+}
+.list-items ul {
+  text-align: center;
+}
+.list-items li {
+  font-size: 18px;
+  color: rgb(147, 93, 198);
+  text-align: center;
+  margin: 0;
+}
+.list-items li:hover {
+  color: rgb(85, 31, 118);
+  cursor: pointer;
 }

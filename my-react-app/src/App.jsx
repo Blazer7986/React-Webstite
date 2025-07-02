@@ -9,6 +9,7 @@ import Counter from "./components/Counter.jsx";
 import ColorPicker from "./components/ColorPicker.jsx";
 import Food from "./components/Food.jsx";
 import Car from "./components/Car.jsx";
+import ToDoList from "./components/ToDoList.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -64,6 +65,7 @@ function App() {
       <ColorPicker />
       <Food />
       <Car />
+      <ToDoList />
       <Footer />
     </>
   );

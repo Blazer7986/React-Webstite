@@ -11,6 +11,7 @@ import Food from "./components/Food.jsx";
 import Car from "./components/Car.jsx";
 import ToDoList from "./components/ToDoList.jsx";
 import Window from "./components/Window.jsx";
+import DigitalClock from "./components/DigitalClock.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -49,6 +50,9 @@ import Window from "./components/Window.jsx";
 // 1) Event Listensers    2) DOM manipulation   3) Subscription (real-time updates)
 // 4) Fetching Data from APIs   5) Clean up with a component unmounts
 
+// useContext() - React hook that allows you to share values between multiple
+//                levels of components without passing props through each level
+
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 95 },
@@ -82,6 +86,7 @@ function App() {
       <Food />
       <Car />
       <ToDoList />
+      <DigitalClock />
       <Window />
       <Footer />
     </>

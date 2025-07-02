@@ -273,16 +273,18 @@ h1 {
   background-color: blue;
 }
 input[type="text"] {
-  font-size: 1.6rem;
   padding: 10px;
   border: 2px solid rgb(90, 90, 90);
   border-radius: 5px;
   color: rgb(90, 90, 90);
 }
+input.input-add {
+  font-size: 1.6rem;
+}
 ol {
   padding: 0;
 }
-li {
+.todo-ol li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
@@ -300,4 +302,27 @@ li {
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+}
+
+.clock-container {
+  background-image: url(assets/flowerBed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 100% */
+}
+.clock {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+  backdrop-filter: blur(5px);
 }

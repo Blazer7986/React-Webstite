@@ -47,6 +47,7 @@ function ToDoList() {
       <div>
         <input
           type="text"
+          className="input-add"
           placeholder="Enter a task ..."
           value={newTask}
           onChange={handleInputChange}
@@ -55,7 +56,7 @@ function ToDoList() {
           Add
         </button>
       </div>
-      <ol>
+      <ol className="todo-ol">
         {tasks.map((task, index) => (
           <li key={index}>
             {" "}

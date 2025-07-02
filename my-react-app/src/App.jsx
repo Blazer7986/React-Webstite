@@ -12,6 +12,7 @@ import Car from "./components/Car.jsx";
 import ToDoList from "./components/ToDoList.jsx";
 import Window from "./components/Window.jsx";
 import DigitalClock from "./components/DigitalClock.jsx";
+import ComponentA from "./components/ComponentA.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -53,6 +54,18 @@ import DigitalClock from "./components/DigitalClock.jsx";
 // useContext() - React hook that allows you to share values between multiple
 //                levels of components without passing props through each level
 
+// PROVIDER COMPONENT
+// 1. import {createContext} from 'react'
+// 2. export const MyContext = createContext();
+// 3. <MyComponent.Provider value={value}>
+//    <Child/>
+//    </MyComponent.Provider>
+
+// CONSUMER COMPONENT
+// 1. import React, {useContext} from 'react';
+//    import {MyContext} from './ComponentA';
+// 2. const value = useContext(MyContext);
+
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 95 },
@@ -87,6 +100,7 @@ function App() {
       <Car />
       <ToDoList />
       <DigitalClock />
+      <ComponentA />
       <Window />
       <Footer />
     </>

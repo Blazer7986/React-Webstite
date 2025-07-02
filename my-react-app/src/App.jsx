@@ -10,6 +10,7 @@ import ColorPicker from "./components/ColorPicker.jsx";
 import Food from "./components/Food.jsx";
 import Car from "./components/Car.jsx";
 import ToDoList from "./components/ToDoList.jsx";
+import Window from "./components/Window.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -32,6 +33,21 @@ import ToDoList from "./components/ToDoList.jsx";
 // useState() = React hook that allows the creation of a stateful variable
 //              AND a setter function to update its value in the Viritual
 //              DOM.        EX) [name, setName]
+
+// useEffect() = React hook that tells React DO SOME CODE WHEN (pick one):
+//               This component re-renders
+//               This component mounts
+//               The state of a value
+
+// useEffect(function, [dependencies])
+
+// 1. useEffect(() => {})             // Runs after every re-render
+// 2. useEffect(() => {}, [])         // Runs only on mount
+// 3. useEffect(() => {}, [values])   // Runs only on mount + when value changes
+
+// USES
+// 1) Event Listensers    2) DOM manipulation   3) Subscription (real-time updates)
+// 4) Fetching Data from APIs   5) Clean up with a component unmounts
 
 function App() {
   const fruits = [
@@ -66,6 +82,7 @@ function App() {
       <Food />
       <Car />
       <ToDoList />
+      <Window />
       <Footer />
     </>
   );

@@ -1,26 +1,31 @@
-import React from "react";
-import logo from "../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+//import { Link } from "react-router-dom";
+// Keep track of the active page and place an active className.
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
       <img className="logo" src={logo} alt="" />
       <ul>
-        <Link to="/">
+        <NavLink to="/">
           <li>Home</li>
-        </Link>
-        <Link to="/products">
+        </NavLink>
+        <NavLink to="/products">
           <li>Products</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink to="/about">
           <li>About</li>
-        </Link>
-        <Link to="/contact">
+        </NavLink>
+        <NavLink to="/contact">
           <li>Contact</li>
-        </Link>
+        </NavLink>
       </ul>
-      <button>Get Started</button>
+      <button onClick={() => navigate("/contact", { replace: true })}>
+        Get Started
+      </button>
     </div>
   );
 };

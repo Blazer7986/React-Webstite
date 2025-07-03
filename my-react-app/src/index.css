@@ -502,3 +502,7 @@ a.active {
 .contact-form button {
   background-color: rgb(216, 112, 147);
 }
+.notfound {
+  color: red;
+  font-size: 48px;
+}

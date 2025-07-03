@@ -1,4 +1,3 @@
-import UserGreeting from "./components/UserGreeting.jsx";
 import Footer from "./components/Footer.jsx";
 import {
   Route,
@@ -9,8 +8,10 @@ import {
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
 import RouteLayout from "./layout/RouteLayout.jsx";
+import ContactLayout from "./layout/ContactLayout.jsx";
+import ContactInfo from "./components/ContactInfo.jsx";
+import ContactForm from "./components/ContactForm.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -79,7 +80,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="products" element={<Products />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<ContactLayout />}>
+          <Route path="info" element={<ContactInfo />} />
+          <Route path="form" element={<ContactForm />} />
+        </Route>
       </Route>
     )
   );

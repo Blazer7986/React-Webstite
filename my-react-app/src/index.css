@@ -508,6 +508,10 @@ a.active {
 }
 .job-title {
   font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 .jobs {
   padding: 40px 0px;
@@ -522,4 +526,17 @@ a.active {
   padding: 10px;
   background-color: rgb(139, 97, 178);
   color: white;
+}
+
+.job-details {
+  padding: 30px 0;
+  max-width: 800px;
+}
+.job-details button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }

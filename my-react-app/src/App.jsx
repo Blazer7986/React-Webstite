@@ -15,6 +15,7 @@ import ContactForm from "./components/ContactForm.jsx";
 import NotFound from "./components/NotFound.jsx";
 import JobsLayout from "./layout/JobsLayout.jsx";
 import Jobs, { jobsLoader } from "./pages/Jobs.jsx";
+import JobDetails, { jobDeatilsLoader } from "./components/JobDetails.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -89,6 +90,11 @@ function App() {
         </Route>
         <Route path="jobs" element={<JobsLayout />}>
           <Route index element={<Jobs />} loader={jobsLoader} />
+          <Route
+            path=":id"
+            element={<JobDetails />}
+            loader={jobDeatilsLoader}
+          />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Route>

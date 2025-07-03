@@ -28,7 +28,7 @@ function Window() {
   }
 
   return (
-    <div>
+    <div className="margin">
       <p>Window Width: {width}px</p>
       <p>Window Height: {height}px</p>
     </div>

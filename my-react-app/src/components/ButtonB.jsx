@@ -31,7 +31,7 @@ function ButtonB() {
   }
 
   return (
-    <div>
+    <div className="margin">
       <button onClick={handleClick1}>Click Me 1</button> <br />
       <input type="text" ref={inputRef1} /> <br />
       <button onClick={handleClick2}>Click Me 2</button> <br />

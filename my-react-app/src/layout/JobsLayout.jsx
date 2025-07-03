@@ -5,7 +5,9 @@ const JobsLayout = () => {
   return (
     <div>
       <h2 className="job-title">Jobs Openings</h2>
-      <p>List of current job openings in our company.</p>
+      <p className="job-details">
+        List of current job openings in our company.
+      </p>
       <Outlet />
     </div>
   );

@@ -1,20 +1,16 @@
-import Card from "./components/Card.jsx";
-import Student from "./components/Student.jsx";
 import UserGreeting from "./components/UserGreeting.jsx";
-import List from "./components/List.jsx";
-import ProfilePicture from "./components/ProfilePicture.jsx";
 import Footer from "./components/Footer.jsx";
-import MyComponent from "./components/myComponent.jsx";
-import Counter from "./components/Counter.jsx";
-import ColorPicker from "./components/ColorPicker.jsx";
-import Food from "./components/Food.jsx";
-import Car from "./components/Car.jsx";
-import ToDoList from "./components/ToDoList.jsx";
-import Window from "./components/Window.jsx";
-import DigitalClock from "./components/DigitalClock.jsx";
-import ComponentA from "./components/ComponentA.jsx";
-import ButtonB from "./components/ButtonB.jsx";
-import StopWatch from "./components/StopWatch.jsx";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Products from "./pages/Products.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import RouteLayout from "./layout/RouteLayout.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -77,43 +73,20 @@ import StopWatch from "./components/StopWatch.jsx";
 //            3. Managing Timers and Intervals
 
 function App() {
-  const fruits = [
-    { id: 1, name: "apple", calories: 95 },
-    { id: 2, name: "kiwi", calories: 45 },
-    { id: 3, name: "orange", calories: 105 },
-    { id: 4, name: "banana", calories: 157 },
-    { id: 5, name: "blueberry", calories: 37 },
-  ];
-  const vegs = [
-    { id: 1, name: "potato", calories: 110 },
-    { id: 2, name: "tomato", calories: 55 },
-    { id: 3, name: "carrot", calories: 25 },
-    { id: 4, name: "corn", calories: 63 },
-    { id: 5, name: "broccoli", calories: 50 },
-  ];
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RouteLayout />}>
+        <Route index element={<Home />} />
+        <Route path="products" element={<Products />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+    )
+  );
 
   return (
     <>
-      <UserGreeting isLoggedIn={true} username="Rosa Balanca" />
-      <Card />
-      {fruits.length > 0 && <List list={fruits} category="Fruits" />}
-      {vegs.length > 0 && <List list={vegs} category="Vegetables" />}
-      <ProfilePicture />
-      <Student name="Patrick" age={30} isStudent={false} />
-      <Student name="Bob" age={28} isStudent={true} />
-      <Student name="Squidward" age={50} isStudent={false} />
-      <Student name="Sandy" age={28} isStudent={false} />
-      <MyComponent />
-      <Counter />
-      <ColorPicker />
-      <Food />
-      <Car />
-      <ToDoList />
-      <DigitalClock />
-      <ComponentA />
-      <StopWatch />
-      <ButtonB />
-      <Window />
+      <RouterProvider router={router} />
       <Footer />
     </>
   );

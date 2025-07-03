@@ -75,9 +75,9 @@ input[type='color'] {
   font-size: 2em;
   background-color: blueviolet;
   color: white;
-  padding: 60px 10px;
+  padding: 30px 10px;
   border-radius: 5px;
-  margin: 0;
+  margin: 20px 0px; 
 }
 
 .login-prompt {
@@ -92,7 +92,7 @@ input[type='color'] {
 .list {
   display: inline-block;
   vertical-align: top;
-  margin: 0px 10px;
+  margin: 0px 20px;
   padding: 10px;
 }
 .list-category {
@@ -133,7 +133,8 @@ input[type='color'] {
 .profile-pic {
   width: 200px;
   height: auto;
-  margin-top: 20px;
+  margin: 10px;
+  padding: 10px;
   vertical-align: top;
 }
 
@@ -380,4 +381,53 @@ ol {
 }
 .reset-button:hover {
   background-color: blue;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+}
+
+.navbar ul {
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: black;
+}
+.navbar button {
+  background-color: rgba(0, 0, 0);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 100px;
+}
+
+.container h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
 }

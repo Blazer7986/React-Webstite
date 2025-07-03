@@ -14,6 +14,7 @@ import Window from "./components/Window.jsx";
 import DigitalClock from "./components/DigitalClock.jsx";
 import ComponentA from "./components/ComponentA.jsx";
 import ButtonB from "./components/ButtonB.jsx";
+import StopWatch from "./components/StopWatch.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -110,6 +111,7 @@ function App() {
       <ToDoList />
       <DigitalClock />
       <ComponentA />
+      <StopWatch />
       <ButtonB />
       <Window />
       <Footer />

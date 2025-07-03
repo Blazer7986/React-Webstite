@@ -13,6 +13,7 @@ import ToDoList from "./components/ToDoList.jsx";
 import Window from "./components/Window.jsx";
 import DigitalClock from "./components/DigitalClock.jsx";
 import ComponentA from "./components/ComponentA.jsx";
+import ButtonB from "./components/ButtonB.jsx";
 
 // How to style React components with CSS
 // -----------------------------------------
@@ -66,6 +67,14 @@ import ComponentA from "./components/ComponentA.jsx";
 //    import {MyContext} from './ComponentA';
 // 2. const value = useContext(MyContext);
 
+// useRef() - "use Reference" Does not cause re-renders when its value changes.
+//            When you want a component to "remember" some information, but you
+//            don't want that information to trigger new renders.
+//
+//            1. Accessing/ Interacting with DOM elements
+//            2. Handling Focus, Animations, and Transitions
+//            3. Managing Timers and Intervals
+
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 95 },
@@ -101,6 +110,7 @@ function App() {
       <ToDoList />
       <DigitalClock />
       <ComponentA />
+      <ButtonB />
       <Window />
       <Footer />
     </>

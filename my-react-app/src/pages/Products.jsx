@@ -7,7 +7,7 @@ import Car from "../components/Car";
 
 const Products = () => {
   return (
-    <div>
+    <div className="pb-10">
       <h1 className="container">Products</h1>
       <MyComponent />
       <Counter />

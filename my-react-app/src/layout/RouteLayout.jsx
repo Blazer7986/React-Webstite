@@ -5,7 +5,7 @@ import UserGreeting from "../components/UserGreeting";
 
 const RouteLayout = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-200">
       <Navbar />
       <UserGreeting isLoggedIn={true} username="Rosa Balanca" />
       <Outlet />

@@ -7,9 +7,9 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="navbar">
+    <div className="navbar dark:bg-gray-700">
       <img className="logo" src={logo} alt="" />
-      <ul>
+      <ul className="dark:bg-gray-300">
         <NavLink to="/">
           <li>Home</li>
         </NavLink>

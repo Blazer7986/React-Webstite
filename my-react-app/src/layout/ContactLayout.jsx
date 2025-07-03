@@ -4,7 +4,7 @@ import StopWatch from "../components/StopWatch";
 import ComponentA from "../components/ComponentA";
 const ContactLayout = () => {
   return (
-    <div>
+    <div className="pb-10">
       <Contact />
       <Outlet />
       <StopWatch />

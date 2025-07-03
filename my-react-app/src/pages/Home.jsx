@@ -22,7 +22,7 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="pb-10">
       <h1 className="container">Home</h1>
       <div className="top">
         <Card />

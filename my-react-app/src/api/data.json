@@ -1,0 +1,82 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Sr. React Developer",
+      "salary": 50000,
+      "location": "London"
+    },
+    {
+      "id": "2",
+      "title": "Frontend Developer",
+      "salary": 40000,
+      "location": "San Franciso US"
+    },
+    {
+      "id": "3",
+      "title": "Product Manager",
+      "salary": 90000,
+      "location": "Los Angeles US"
+    },
+    {
+      "id": "4",
+      "title": "UI Designer",
+      "salary": 40000,
+      "location": "Mumbai IN"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Happy Birthday Sam",
+      "tags": [
+        "birthday",
+        "heartwarming"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Web Development Cpurse",
+      "tags": [
+        "web development",
+        "teaching"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "What happen to Carmen?",
+      "tags": [
+        "crime",
+        "history"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Slime DIY",
+      "tags": [
+        "slime",
+        "creativity"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "First post",
+      "tags": [
+        "creativity",
+        "crime"
+      ]
+    }
+  ],
+  "tags": [
+    "birthday",
+    "creativity",
+    "heartwarming",
+    "crime",
+    "slime",
+    "teaching",
+    "web development",
+    "history",
+    "fantasy",
+    "magical"
+  ]
+}
